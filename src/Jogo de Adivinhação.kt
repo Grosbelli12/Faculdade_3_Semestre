@@ -1,18 +1,16 @@
-import java.util.*
+import kotlin.random.Random
 
 fun main() {
-    val scanner = Scanner(System.`in`)
-    val random = Random()
-    var numeroSecreto = 0
+
     var tentativa = 0
     var tentativas = 0
 
-    numeroSecreto = random.nextInt(100) + 1
+    val numeroSecreto = Random.nextInt(1, 101)
     println("Tente adivinhar o número entre 1 e 100!")
 
     while (true) {
         println("Digite seu palpite:")
-        tentativa = scanner.nextInt()
+        tentativa = readLine()!!.toInt()
         tentativas++
         if (tentativa == numeroSecreto) {
             println("Parabéns! Você acertou em " + tentativas + " tentativas.")
