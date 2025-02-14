@@ -1,4 +1,4 @@
-package Ex_Aula01_De_Kotlin
+package Faculdade_3_Semestre.Ex_Aula_01_Kotlin
 
 fun main() {
     var soma = 0.0
