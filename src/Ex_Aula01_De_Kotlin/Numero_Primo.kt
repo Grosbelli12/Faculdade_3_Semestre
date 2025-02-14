@@ -1,4 +1,4 @@
-import java.util.*
+package Ex_Aula01_De_Kotlin
 
 fun main() {
 
@@ -7,14 +7,15 @@ fun main() {
     var ehPrimo = true
 
     println("Digite um número: ")
-    numero = readLine()!!.toInt()
+    numero = readLine()?.toIntOrNull() ?: 0
 
     if (numero <= 1) {
         ehPrimo = false
     } else {
         for (i in 2..numero) {
             if (numero % i == 0) {
-                ehPrimo = true
+                ehPrimo = false
+                break
             }
         }
     }

@@ -1,3 +1,5 @@
+package Ex_Aula01_De_Kotlin
+
 import kotlin.random.Random
 
 fun main() {
@@ -10,10 +12,11 @@ fun main() {
 
     while (true) {
         println("Digite seu palpite:")
-        tentativa = readLine()!!.toInt()
+        tentativa = readLine()?.toIntOrNull() ?: 0
         tentativas++
         if (tentativa == numeroSecreto) {
             println("Parabéns! Você acertou em " + tentativas + " tentativas.")
+            break
         } else if (tentativas < numeroSecreto) {
             println("Tente um número maior.")
         } else {
