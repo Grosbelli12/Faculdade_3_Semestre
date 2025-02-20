@@ -1,4 +1,4 @@
-package Faculdade_3_Semestre.Ex_Aula_02_De_Kotlin
+package Faculdade_3_Semestre.Nivelamento_em_Kotlin
 
 fun main() {
 
