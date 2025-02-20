@@ -54,9 +54,9 @@ fun main() {
         }
     } while (acertou == 1)
 
-    if (tentativasPlayer1 > tentativasPlayer2){
-    println("Parabéns você ganhou ${nomesJogadores[0]} você acertou o numero em $tentativasPlayer1 tentativa(s)")
-    }else {
+    if (tentativasPlayer1 > tentativasPlayer2) {
+        println("Parabéns você ganhou ${nomesJogadores[0]} você acertou o numero em $tentativasPlayer1 tentativa(s)")
+    } else {
         println("\"Parabéns você ganhou ${nomesJogadores[1]} você acertou o numero em $tentativasPlayer2 tentativa(s)")
     }
 
