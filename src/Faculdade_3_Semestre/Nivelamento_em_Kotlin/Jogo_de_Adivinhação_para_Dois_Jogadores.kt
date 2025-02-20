@@ -21,12 +21,15 @@ fun main() {
         var numeroTentado = readLine()!!.toInt()
 
         if (numeroAleatorio > numeroTentado) {
+            println("Tentei o múmero: $numeroTentado")
             println("quase o número secreto é maior")
             tentativasPlayer1++
         } else if (numeroAleatorio == numeroTentado) {
+            println("Tentei o múmero: $numeroTentado")
             println("Parabéns você acertou o numero")
             acertou++
         } else {
+            println("Tentei o múmero: $numeroTentado")
             println("Quase o número secreto é menor ")
             tentativasPlayer1++
         }
@@ -37,12 +40,15 @@ fun main() {
         var numeroTentado = readLine()!!.toInt()
 
         if (numeroAleatorio > numeroTentado) {
+            println("Tentei o múmero: $numeroTentado")
             println("quase o número secreto é maior")
             tentativasPlayer2++
         } else if (numeroAleatorio < numeroTentado) {
+            println("Tentei o múmero: $numeroTentado")
             println("Quase o número secreto é menor ")
             tentativasPlayer2++
         } else {
+            println("Tentei o múmero: $numeroTentado")
             println("Parabéns você acertou o numero")
             acertou++
         }
@@ -54,5 +60,5 @@ fun main() {
         println("\"Parabéns você ganhou ${nomesJogadores[1]} você acertou o numero em $tentativasPlayer2 tentativa(s)")
     }
 
-    println("O placar foi  $tentativasPlayer1 tentativa(s) para o ${nomesJogadores[0]} \n o ${nomesJogadores[1]} levou $tentativasPlayer2 tentativas para concluir ")
+    println("O placar foi  $tentativasPlayer1 tentativa(s) para o ${nomesJogadores[0]} \n o ${nomesJogadores[1]} levou $tentativasPlayer2 tentativa(s) para concluir ")
 }
