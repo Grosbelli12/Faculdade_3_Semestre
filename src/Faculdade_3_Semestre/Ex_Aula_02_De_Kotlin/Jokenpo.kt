@@ -4,7 +4,8 @@ fun main() {
 
 
     var resposta = 0
-    var verificador = 0
+    var contadorvit = 0
+    var contadorder = 0
     val escolhaAleatoria = listOf(1, 2, 3)
 
     // tarnsforma a resposta que inteira para uma String
@@ -28,11 +29,13 @@ fun main() {
         if (resposta2 == resposta) {
             println("Empate tente novamente! deu $escolhaUsuario $escolhaComputador")
         } else if (resposta2 > resposta) {
-            println("Você perdeu tente novamente deu $escolhaUsuario $escolhaComputador!")
+            println("Você perdeu! $contadorder tente novamente deu $escolhaUsuario $escolhaComputador!")
+            contadorder++
         } else {
-            println("você ganhou! parabéns deu $escolhaUsuario $escolhaComputador")
-            verificador++
+            println("você ganhou! $contadorvit parabéns deu $escolhaUsuario $escolhaComputador")
+            contadorvit++
         }
-    } while (verificador < 1)
-
+        println("você deseja continuar jogando se sim digite 1 se não digite 2")
+         val verificador = readLine()!!.toInt()
+    } while (verificador == 1)
 }
