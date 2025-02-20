@@ -19,46 +19,39 @@ fun main() {
     do {
         println("Qual o número secreto ${nomesJogadores[0]}")
         var numeroTentado = readLine()!!.toInt()
+        tentativasPlayer1++
+        println("Tentei o múmero: $numeroTentado")
 
         if (numeroAleatorio > numeroTentado) {
-            println("Tentei o múmero: $numeroTentado")
             println("quase o número secreto é maior")
-            tentativasPlayer1++
         } else if (numeroAleatorio == numeroTentado) {
-            println("Tentei o múmero: $numeroTentado")
             println("Parabéns você acertou o numero")
-            acertou++
         } else {
-            println("Tentei o múmero: $numeroTentado")
             println("Quase o número secreto é menor ")
-            tentativasPlayer1++
         }
     } while (acertou < 1)
 
     do {
         println("Qual o número secreto ${nomesJogadores[1]}")
         var numeroTentado = readLine()!!.toInt()
+        tentativasPlayer2++
+        println("Tentei o múmero: $numeroTentado")
 
         if (numeroAleatorio > numeroTentado) {
-            println("Tentei o múmero: $numeroTentado")
             println("quase o número secreto é maior")
-            tentativasPlayer2++
         } else if (numeroAleatorio < numeroTentado) {
-            println("Tentei o múmero: $numeroTentado")
             println("Quase o número secreto é menor ")
-            tentativasPlayer2++
         } else {
-            println("Tentei o múmero: $numeroTentado")
             println("Parabéns você acertou o numero")
-            acertou++
         }
     } while (acertou == 1)
 
     if (tentativasPlayer1 > tentativasPlayer2) {
         println("Parabéns você ganhou ${nomesJogadores[0]} você acertou o numero em $tentativasPlayer1 tentativa(s)")
-    } else {
+    } else if (tentativasPlayer1 == tentativasPlayer2) {
+        println("O jogo deu empate")
+    }else {
         println("\"Parabéns você ganhou ${nomesJogadores[1]} você acertou o numero em $tentativasPlayer2 tentativa(s)")
     }
-
     println("O placar foi  $tentativasPlayer1 tentativa(s) para o ${nomesJogadores[0]} \n o ${nomesJogadores[1]} levou $tentativasPlayer2 tentativa(s) para concluir ")
 }
