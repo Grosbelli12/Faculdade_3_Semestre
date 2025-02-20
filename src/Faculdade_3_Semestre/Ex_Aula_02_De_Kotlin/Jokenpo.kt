@@ -5,21 +5,34 @@ fun main() {
 
     var resposta = 0
     var verificador = 0
+    val escolhaAleatoria = listOf(1, 2, 3)
 
-do{
-    println("Digite 1 para tesoura 2 para pedra e 3 para papel")
-    resposta = readLine()!!.toInt()
+    // tarnsforma a resposta que inteira para uma String
+    fun escolhaParaString(escolha: Int): String {
+        return when (escolha) {
+            1 -> "pedra"
+            2 -> "tesoura"
+            3 -> "papel"
+            else -> "inválido"
+        }
+    }
+    do {
+        println("Digite 1 para tesoura 2 para pedra e 3 para papel")
+        resposta = readLine()!!.toInt()
+        val resposta2 = escolhaAleatoria.random()
 
-    val escolhaAleatoria = listOf( 1, 2 ,3 )
-    val resposta2 = escolhaAleatoria.random()
-    if (resposta2 == resposta) {
-        println("Empate tente novamente!")
-    }else if(resposta2 > resposta){
-        println("Você perdeu tente novamente!")
-    }else{
-        println("você ganhou! parabéns")
-        verificador++
-}
-    }while (verificador < 1)
+        // depois ter lido a resposta ele troca pela String correspondente a sua resposta que foi definida acima
+        val escolhaUsuario = escolhaParaString(resposta)
+        val escolhaComputador = escolhaParaString(resposta2)
+
+        if (resposta2 == resposta) {
+            println("Empate tente novamente! deu $escolhaUsuario $escolhaComputador")
+        } else if (resposta2 > resposta) {
+            println("Você perdeu tente novamente deu $escolhaUsuario $escolhaComputador!")
+        } else {
+            println("você ganhou! parabéns deu $escolhaUsuario $escolhaComputador")
+            verificador++
+        }
+    } while (verificador < 1)
 
 }
