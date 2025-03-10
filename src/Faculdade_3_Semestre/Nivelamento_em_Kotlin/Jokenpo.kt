@@ -1,3 +1,4 @@
+
 package Faculdade_3_Semestre.Nivelamento_em_Kotlin
 
 fun main() {
@@ -39,6 +40,6 @@ fun main() {
         }
         println("Placar do jogo $contadorvit vitórias e  $contadorder derrotas e $contadorempate empates")
         println("você deseja continuar jogando se sim digite 1 se não digite 2")
-         val verificador = readLine()!!.toInt()
+        val verificador = readLine()!!.toInt()
     } while (verificador == 1)
 }
