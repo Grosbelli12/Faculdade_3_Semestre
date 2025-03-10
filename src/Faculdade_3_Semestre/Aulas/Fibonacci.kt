@@ -28,7 +28,6 @@ fun main(){
 
      println(calcFibonacci(num.toInt()))
 }
-
 fun calcFibonacci(n: Int): Int {
     if (n<= 1){
         return n
