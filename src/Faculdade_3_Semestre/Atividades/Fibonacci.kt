@@ -1,4 +1,4 @@
-package Faculdade_3_Semestre.Ex_Aulas
+package Faculdade_3_Semestre.Atividades
 fun main() {
     var aux = 0
     var n1 = 1

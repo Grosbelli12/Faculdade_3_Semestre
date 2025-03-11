@@ -1,4 +1,4 @@
-package Faculdade_3_Semestre.Ex_Aulas
+package Faculdade_3_Semestre.Atividades
 
 import kotlin.random.Random
 

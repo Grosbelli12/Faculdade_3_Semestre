@@ -1,4 +1,4 @@
-package Faculdade_3_Semestre.Ex_Aulas
+package Faculdade_3_Semestre.Atividades
 
 fun main() {
     var soma = 0.0

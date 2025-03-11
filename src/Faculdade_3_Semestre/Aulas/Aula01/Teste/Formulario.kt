@@ -1,4 +1,6 @@
-package Faculdade_3_Semestre.Ex_Aulas
+package Faculdade_3_Semestre.Aulas.Aula01.Teste
+
+import Faculdade_3_Semestre.Aulas.Aula01.Dominio.Pessoa
 
 fun main() {
     pedidoInformacoes()
