@@ -1,4 +1,4 @@
-package Faculdade_3_Semestre.Ex_Aula_01_Kotlin
+package Faculdade_3_Semestre.Ex_Aulas
 fun main() {
     var aux = 0
     var n1 = 1
