@@ -1,4 +1,4 @@
-package Faculdade_3_Semestre.Aulas.Aula01.Dominio
+package Faculdade_3_Semestre.Aulas.Aula01.Teste
 
 
 //Herança: Permite que uma classe herde todos os atrivutos e metodos de uma outra classe
