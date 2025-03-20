@@ -31,9 +31,14 @@ private fun menu(){
             }
             3-> {
                 print("Editando...")
+                editar()
 
             }
-            4-> print("Excluindo...")
+            4-> {
+                print("Excluindo...")
+                excluir()
+            }
+
             0-> print("Saindo...")
         }
     }while (opcao != 0)
@@ -62,4 +67,21 @@ private fun listar(convidado: Convidado){
             " Presente: ${convidado.presente}; " +
             " Restrição:${convidado.alimentar}; " +
             " Vai ir a festa? ${convidado.presenca};")
+}
+
+private fun editar(){
+    println("O convidado vai? S/N")
+    val resposta = readln()
+    when(resposta){
+        "S"-> convidado.presenca = true
+        "N"-> convidado.presenca = false
+    }
+}
+
+private fun excluir(){
+    convidado.nome = ""
+    convidado.alimentar = ""
+    convidado.presente = ""
+    convidado.presenca = false
+    println("Convidar excluido ")
 }
