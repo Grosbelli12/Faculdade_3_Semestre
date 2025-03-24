@@ -1,11 +1,20 @@
 package Faculdade_3_Semestre.Aulas.Aula02.Teste
+
 import Faculdade_3_Semestre.Aulas.Aula02.Dominio.Convidado
+
+val expressaoRegular = Regex("[0-4]")
+
+// var Global
+var convidado: Convidado = Convidado()
+
+// Instância de um lista de mutável vazia
+var listaConvidados: MutableList<Convidado> = mutableListOf<Convidado>()
+
 fun main() {
     menu()
 }
-var convidado: Convidado = Convidado()
 
-private fun menu(){
+private fun menu() {
     do {
 
         println("---MENU---")
@@ -15,38 +24,46 @@ private fun menu(){
         println("4- EXCLUIR")
         println("0- SAIR")
 
-        val opcao = readLine()!!.toInt()//Validar
+        val opcao = readln()
 
+        if (expressaoRegular.matches(opcao)) {
+            when (opcao.toInt()) {
+                1 -> {
+                    print("Cadastrando...")
+                    cadastrar()
+                }
 
+                2 -> {
+                    print("listando...")
+                    listar()
 
-        when(opcao){
-            1-> {
-                print("Cadastrando...")
-                convidado = cadastrar()
+                }
+
+                3 -> {
+                    print("Editando...")
+                    editar()
+
+                }
+
+                4 -> {
+                    print("Excluindo...")
+                    excluir()
+                }
+
+                0 -> print("Saindo...")
             }
-            2-> {
-                print("listando...")
-                listar(convidado)
-
-            }
-            3-> {
-                print("Editando...")
-                editar()
-
-            }
-            4-> {
-                print("Excluindo...")
-                excluir()
-            }
-
-            0-> print("Saindo...")
+        } else {
+            println(
+                "\n" +
+                        "\n" +
+                        "\n" +
+                        "Opção inválida!"
+            )
         }
-    }while (opcao != 0)
+    } while (opcao.toInt() != 0)
 }
 
- private fun cadastrar(): Convidado{
-    //Instância
-    var convidado = Convidado()
+private fun cadastrar() {
 
     print("Qual é o seu nome? ")
     //val nome = readln()
@@ -59,29 +76,65 @@ private fun menu(){
     print("Qual sua resitrição alimentar? ")
     //val alimento = readln()
     convidado.alimentar = readln()
-    return convidado
+
+    listaConvidados.add(convidado)
 }
 
-private fun listar(convidado: Convidado){
-    print("Nome: ${convidado.nome}; " +
-            " Presente: ${convidado.presente}; " +
-            " Restrição:${convidado.alimentar}; " +
-            " Vai ir a festa? ${convidado.presenca};")
-}
+private fun listar(): String {
+    var i = 0
+    if (listaConvidados.isEmpty()) {
+        println("Não há convidados")
 
-private fun editar(){
-    println("O convidado vai? S/N")
-    val resposta = readln()
-    when(resposta){
-        "S"-> convidado.presenca = true
-        "N"-> convidado.presenca = false
+    } else {
+        listaConvidados.forEach { convidado ->
+            print(
+                "Posição ${i++} " +
+                        "Nome: ${convidado.nome};\n " +
+                        " Presente: ${convidado.presente};\n " +
+                        " Restrição:${convidado.alimentar};\n " +
+                        " Vai ir a festa? ${convidado.presenca}\n; "
+            )
+        }
     }
+    return "Listagem foi um sucesso "// retorna a função
+
 }
 
-private fun excluir(){
-    convidado.nome = ""
-    convidado.alimentar = ""
-    convidado.presente = ""
-    convidado.presenca = false
-    println("Convidar excluido ")
+private fun editar(): Boolean {
+    if (listaConvidados.isEmpty()) {
+        println("A lista está vazia")
+        return false
+    }
+    listar()
+
+    println("Digite a posição a ser editada:")
+    val posicao = readln().toInt()
+
+    println("O convidado vai? S/N")
+    val resposta = readln().uppercase().trim()
+    when (resposta) {
+        "S" -> listaConvidados[posicao].presenca = true
+        "N" -> listaConvidados[posicao].presenca = false
+    }
+    return true
+}
+
+private fun excluir(): Boolean {
+    if (listaConvidados.isEmpty()) {
+        println("A lista está vazia")
+        return false
+    }
+    listar()
+    println("Qual posição você deseja remover:")
+    val posicao = readln().toInt()
+    listaConvidados.removeAt(posicao)
+
+    /* convidado.nome = ""
+     convidado.alimentar = ""
+     convidado.presente = ""
+     convidado.presenca = false
+     println("Convidar excluido ")*/
+
+    println("Candidato removido")
+    return true
 }
