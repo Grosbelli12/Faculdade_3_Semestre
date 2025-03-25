@@ -16,7 +16,6 @@ fun main() {
 
 private fun menu() {
     do {
-
         println("---MENU---")
         println("1- CADASTRAR")
         println("2- LISTAR")

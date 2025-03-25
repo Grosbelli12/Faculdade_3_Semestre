@@ -8,6 +8,6 @@ fun main() {
 
     for (i in numero downTo 1) {
         fatorial *= i
-        println("O $fatorial de numero é $fatorial")
     }
+        println("O fatorial do $numero é $fatorial")
 }
