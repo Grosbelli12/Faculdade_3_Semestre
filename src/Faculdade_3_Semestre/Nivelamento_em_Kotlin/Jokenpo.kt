@@ -20,7 +20,7 @@ fun main() {
         }
     }
     do {
-        println("Digite 1 para tesoura 2 para pedra e 3 para papel")
+            println("Digite 1 para tesoura 2 para pedra e 3 para papel")
         resposta = readLine()!!.toInt()
         val resposta2 = escolhaAleatoria.random()
 
