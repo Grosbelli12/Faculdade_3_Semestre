@@ -84,4 +84,5 @@ private fun leitorTeclado() {
     }while (num == 10)
     println(numPositivos)
     println(numNegativios)
+
 }
