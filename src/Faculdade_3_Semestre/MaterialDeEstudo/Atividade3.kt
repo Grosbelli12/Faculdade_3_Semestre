@@ -69,4 +69,19 @@ private fun gerarNumero() {
 
 private fun leitorTeclado() {
 
+        val numPositivos  = mutableListOf(11)
+        val numNegativios = mutableListOf(11)
+    do{
+        println("Digite os números de -10 até 10")
+        val num = readln().toInt()
+        if (num > 0 ) {
+            numPositivos.add(num)
+        }
+        if (num < 0) {
+            numNegativios.add(-num)
+        }
+
+    }while (num == 10)
+    println(numPositivos)
+    println(numNegativios)
 }
