@@ -26,4 +26,5 @@ fun main() {
     for (nome in listaConvidados) {
         println("Nome: $nome")
     }
+
 }

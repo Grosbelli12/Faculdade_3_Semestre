@@ -34,6 +34,7 @@ private fun menu() {
                 3 -> {
                     leitorTeclado()
                 }
+
                 4 ->
                     println("Saindooo")
             }
@@ -69,20 +70,37 @@ private fun gerarNumero() {
 
 private fun leitorTeclado() {
 
-        val numPositivos  = mutableListOf(11)
-        val numNegativios = mutableListOf(11)
-    do{
-        println("Digite os números de -10 até 10")
+    val numPositivos = mutableListOf<Int>()
+    val numNegativios = mutableListOf<Int>()
+    var i = 0
+    while (i < 10) {
+        println("Digite o ${i + 1}º número inteiro positivo:")
         val num = readln().toInt()
-        if (num > 0 ) {
+        if (num > 0) {
             numPositivos.add(num)
+            i++
+        } else {
+            println("Por favor, digite um número positivo.")
         }
-        if (num < 0) {
-            numNegativios.add(-num)
-        }
+    }
 
-    }while (num == 10)
-    println(numPositivos)
-    println(numNegativios)
+    i = 0
+    while (i < 10) {
+        println("Digite o ${i + 1}º número inteiro negativo:")
+        val num = readln().toInt()
+        if (num < 0) {
+            numNegativios.add(num)
+            i++
+        } else {
+            println("Por favor, digite um número negativo.")
+        }
+    }
+
+    for (numero in numPositivos.sorted()) {
+        println(" Números Positivos : $numero")
+    }
+    for (numero in numNegativios.sorted()) {
+        println("Números Negativos: $numero")
+    }
 
 }
