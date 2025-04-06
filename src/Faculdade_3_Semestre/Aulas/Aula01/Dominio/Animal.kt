@@ -1,4 +1,4 @@
-package Faculdade_3_Semestre.Aulas.Aula01.Teste
+package Faculdade_3_Semestre.Aulas.Aula01.Dominio
 
 //Atividade: Crie uma classe animal
 //Atributos: Nome Ciêntifico, Espécie, Dieta, Habitat

@@ -1,7 +1,5 @@
 package Faculdade_3_Semestre.MaterialDeEstudo
 
-import Faculdade_3_Semestre.Aulas.Aula01.Teste.Pessoa
-import Faculdade_3_Semestre.Aulas.Aula02.Dominio.Convidado
 
 
 fun main() {
