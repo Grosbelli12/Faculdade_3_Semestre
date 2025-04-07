@@ -43,7 +43,7 @@ private fun menu() {
 
 private fun soma() {
     println("Digite quantos números reais você deseja somar: ")
-    var qntnumeros = readln().toDouble()
+    var qntnumeros = readln().toInt()
 
     var soma = 0.0
 
