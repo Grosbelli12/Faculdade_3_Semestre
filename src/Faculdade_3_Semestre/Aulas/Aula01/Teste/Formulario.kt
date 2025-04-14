@@ -1,8 +1,8 @@
-package Faculdade_3_Semestre.Aulas.Aula01.Dominio
+package Faculdade_3_Semestre.Aulas.Aula01.Teste
 
-import Faculdade_3_Semestre.Aulas.Aula01.Teste.Animal
-import Faculdade_3_Semestre.Aulas.Aula01.Teste.Cachorro
-import Faculdade_3_Semestre.Aulas.Aula01.Teste.Gato
+import Faculdade_3_Semestre.Aulas.Aula01.Dominio.Animal
+import Faculdade_3_Semestre.Aulas.Aula01.Dominio.Cachorro
+import Faculdade_3_Semestre.Aulas.Aula01.Dominio.Gato
 
 fun main() {
 

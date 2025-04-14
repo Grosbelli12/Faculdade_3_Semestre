@@ -1,17 +1,15 @@
 package Faculdade_3_Semestre.MaterialDeEstudo
 
-import Faculdade_3_Semestre.Aulas.Aula01.Teste.Pessoa
-import Faculdade_3_Semestre.Aulas.Aula02.Dominio.Convidado
-
-
 fun main() {
     val expressãoRegular = Regex("^[a-zA-Z]+$")
+    val expressãoRegular2 = Regex("[1-2]")
+
     var listaConvidados: MutableList<String> = mutableListOf<String>()
     var pessoa = " "
     do {
         do {
             println("Digite o nome da pessoa que deseja adicionar a lista: ")
-            pessoa = readln()
+            pessoa = readln().uppercase()
             if (!expressãoRegular.matches(pessoa)) {
                 println("Digite caracteres validos")
             }
@@ -20,11 +18,13 @@ fun main() {
         listaConvidados.add(pessoa)
 
         println("Deseja adicionar mais pessoas a lista? se sim Digite 1  se não digite 2: ")
-        val aux = readln().toInt()
+        var aux = readln()
         listaConvidados.sort()
-    } while (aux != 2)
+        if (!expressãoRegular2.matches(aux)) {
+            println("Digite um número correto")
+        }
+    } while (aux.toInt() != 2)
     for (nome in listaConvidados) {
         println("Nome: $nome")
     }
-
 }

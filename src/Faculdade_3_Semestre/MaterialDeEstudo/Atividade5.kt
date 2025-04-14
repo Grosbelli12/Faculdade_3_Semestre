@@ -1,6 +1,7 @@
 package Faculdade_3_Semestre.MaterialDeEstudo
 
 import java.util.Calendar
+import kotlin.random.Random
 
 fun main() {
 
@@ -42,8 +43,9 @@ fun main() {
     val hora = calendar.get(Calendar.HOUR_OF_DAY)
     val minuto = calendar.get(Calendar.MINUTE)
 
-
-    val frase = lista.random()
-
-    println("Chegou a hora da sua frase motivacional: $hora:00 $frase")
+    for (hora in 1 until 25) {
+        val frase = lista.random()
+        println("Chegou a hora da sua frase motivacional $hora:$minuto:  $frase ")
+    }
 }
+

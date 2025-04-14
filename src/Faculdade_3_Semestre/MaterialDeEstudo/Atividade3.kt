@@ -4,7 +4,6 @@ import kotlin.random.Random
 
 val expressaoRegular = Regex("[0-4]")
 
-
 fun main() {
     menu()
 

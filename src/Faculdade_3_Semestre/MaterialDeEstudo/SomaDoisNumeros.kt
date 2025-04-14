@@ -1,4 +1,4 @@
-package Faculdade_3_Semestre.MaterialDeEstudo
+package Faculdade_3_Semestre.MaterialDeEstud
 
 fun main() {
     println("Digite o primeiro número para a soma: ")

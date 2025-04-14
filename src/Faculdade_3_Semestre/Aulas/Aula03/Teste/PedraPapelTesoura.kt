@@ -24,7 +24,6 @@ fun main() {
         }
     } while (opcao != "0")
 
-
 }
 
 fun jogar() {

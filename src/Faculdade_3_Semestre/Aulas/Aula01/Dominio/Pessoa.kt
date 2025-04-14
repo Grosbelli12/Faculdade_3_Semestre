@@ -1,4 +1,4 @@
-package Faculdade_3_Semestre.Aulas.Aula01.Teste
+package Faculdade_3_Semestre.Aulas.Aula01.Dominio
 
 class Pessoa(){
     var nome = ""
