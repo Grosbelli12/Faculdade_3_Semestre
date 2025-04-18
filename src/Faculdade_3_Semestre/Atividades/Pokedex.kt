@@ -273,4 +273,8 @@ fun main(){
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "PSIQUICO" to listOf("LUTADOR", "VENENO")
     )
+    val magnemite = mapOf(
+        "ELETRICO" to listOf("AGUA", "VOADOR"),
+        "ACO" to listOf("FADA","GEO", "PEDRA")
+    )
 }
