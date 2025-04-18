@@ -3,7 +3,7 @@ package Faculdade_3_Semestre.Aulas.Aula04
 import java.util.LinkedList
 
 
-fun main(){
+fun main() {
     val pilha = LinkedList<String>()
 
     //Prateleira de produtos
@@ -23,9 +23,9 @@ fun main(){
     println("Novo produto no topo da pilha: ${pilha.peek()}")
 
     //Verifica se existem produtos na prateleira (Pilha)
-    if (pilha.isEmpty()){
+    if (pilha.isEmpty()) {
         println("Acabou os produtos!")
-    }else{
+    } else {
         println("Ainda existe produtos!")
     }
     //Verifica tudo o que tem na prateleira (Pilha)
@@ -49,48 +49,6 @@ fun main(){
         println(" O user: ${fila.removeFirst()} entrou no servidor ") //Faz duas coisas ao mesmo tempo, imprime ele e remove ele
         Thread.sleep(5000)//Faz o processador parar por 5 segundos
 
-    }while (fila.isNotEmpty()) //Enquanto tiver gente na fila, repita
+    } while (fila.isNotEmpty()) //Enquanto tiver gente na fila, repita
 
-    //-----------------------------------
-
-    val bulbasaur = mapOf(
-        "GRAMA" to listOf("ÁGUA, TERRA, PEDRA"),
-        "VENENO" to listOf("FADA, PLANTA")
-    )
-    val ivisaur = mapOf(
-        "GRAMA" to listOf("ÁGUA", "TERRA", "PEDRA"),
-        "VENENO" to listOf("FADA", "PLANTA")
-    )
-    val venousauro = mapOf(
-        "GRAMA" to listOf("ÁGUA", "TERRA", "PEDRA"),
-        "VENENO" to listOf("FADA", "PLANTA")
-    )
-    val charmander = mapOf(
-        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
-    )
-    val charmeleon = mapOf(
-        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
-    )
-    val charizard = mapOf(
-        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
-        "VOADOR" to listOf("INSETO", "GRAMA", "LUTADOR")
-    )
-    val squirtle = mapOf(
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
-    )
-    val warturtle = mapOf(
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
-    )
-    val blastoise = mapOf(
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
-    )
-    val caterpie = mapOf(
-        "INSETO" to listOf("PLANTA", "PSÍQUICO")
-    )
-    val metapo = mapOf(
-        "INSETO" to listOf(
-            "INSETO" to listOf("PLANTA", "PSÍQUICO")
-        )
-
-    )
 }
