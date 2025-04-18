@@ -273,5 +273,4 @@ fun main(){
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "PSIQUICO" to listOf("LUTADOR", "VENENO")
     )
-    val 
 }
