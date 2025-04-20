@@ -1,6 +1,7 @@
 package Faculdade_3_Semestre.Atividades
 
 fun main(){
+
     val bulbasaur = mapOf(
         "PLANTA" to listOf("ÁGUA, TERRA, PEDRA"),
         "VENENO" to listOf("FADA, PLANTA")
