@@ -20,7 +20,7 @@ fun main() {
         println("Deseja adicionar mais pessoas a lista? se sim Digite 1  se não digite 2: ")
         var aux = readln()
         listaConvidados.sort()
-        if (!expressãoRegular2.matches(aux)) {
+            if (!expressãoRegular2.matches(aux)) {
             println("Digite um número correto")
         }
     } while (aux.toInt() != 2)
