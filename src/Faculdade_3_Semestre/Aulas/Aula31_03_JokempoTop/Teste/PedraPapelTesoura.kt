@@ -1,8 +1,8 @@
-package Faculdade_3_Semestre.Aulas.Aula03.Teste
+package Faculdade_3_Semestre.Aulas.Aula31_03_JokempoTop.Teste
 
-import Faculdade_3_Semestre.Aulas.Aula03.Dominio.Papel
-import Faculdade_3_Semestre.Aulas.Aula03.Dominio.Pedra
-import Faculdade_3_Semestre.Aulas.Aula03.Dominio.Tesoura
+import Faculdade_3_Semestre.Aulas.Aula31_03_JokempoTop.Dominio.Papel
+import Faculdade_3_Semestre.Aulas.Aula31_03_JokempoTop.Dominio.Pedra
+import Faculdade_3_Semestre.Aulas.Aula31_03_JokempoTop.Dominio.Tesoura
 
 // VARIAVEL GLOBAL
 

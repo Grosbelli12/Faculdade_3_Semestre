@@ -2,22 +2,22 @@
     var n1 = 2
     var n2 = 1
     var aux = 0
-    var jorge   = 0
+    var jogo   = 0
 
 
-    jorge = readln().toInt()
+    jogo= readln().toInt()
 
 
     if (n1 > 3) {
         while (true) {
-            aux = jorge
+            aux = jogo
             n2 = n1 + n2
             aux = aux + n2
             break
         }
     }
 
-    print(jorge)
+    print(jogo)
 }*/
 
 fun main(){

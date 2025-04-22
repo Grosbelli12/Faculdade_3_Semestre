@@ -1,6 +1,5 @@
-package Faculdade_3_Semestre.Atividades
+package Faculdade_3_Semestre.Aulas.Aula16_04_Pilhas_Filas_MapOf.Exercicios
 
-import Faculdade_3_Semestre.Atividades.Paciente
 import java.util.LinkedList
 
 

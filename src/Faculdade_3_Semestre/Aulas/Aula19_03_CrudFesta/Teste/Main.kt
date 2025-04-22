@@ -1,9 +1,11 @@
-package Faculdade_3_Semestre.Aulas.Aula02.Teste
+package Faculdade_3_Semestre.Aulas.Aula19_03_CrudFesta.Teste
 
-import Faculdade_3_Semestre.Aulas.Aula02.Dominio.Convidado
+import Faculdade_3_Semestre.Aulas.Aula19_03_CrudFesta.Dominio.Convidado
 
 val expressaoRegular = Regex("[0-5]")
-
+val expressaoRegular2 = Regex("^[A-Za-z]+$")
+val expressaoRegular3 = Regex("^[0-9]+$")
+val expressaoRegular4 = Regex("[S -N]")
 
 // Instância de um lista de mutável vazia
 var listaConvidados: MutableList<Convidado> = mutableListOf<Convidado>()
@@ -67,20 +69,25 @@ private fun menu() {
 }
 
 private fun cadastrar() {
-    val convidado: Convidado = Convidado()
-    print("Qual é o seu nome? ")
-    //val nome = readln()
-    convidado.nome = readln()
+    do {
+        val convidado: Convidado = Convidado()
+        print("Qual é o seu nome? ")
+        //val nome = readln()
+        convidado.nome = readln()
+        if (expressaoRegular2.matches(convidado.nome)) {
+            print("Qual vai ser o seu presente? ")
+            //val presente = readln()
+            convidado.presente = readln()
 
-    print("Qual vai ser o seu presente? ")
-    //val presente = readln()
-    convidado.presente = readln()
+            print("Qual sua resitrição alimentar? ")
+            //val alimento = readln()
+            convidado.alimentar = readln()
 
-    print("Qual sua resitrição alimentar? ")
-    //val alimento = readln()
-    convidado.alimentar = readln()
-
-    listaConvidados.add(convidado)
+            listaConvidados.add(convidado)
+        } else {
+            println("Nome invalido! Use somente letras")
+        }
+    } while (!expressaoRegular2.matches(convidado.nome))
 }
 
 private fun listar(): String {
@@ -100,18 +107,24 @@ private fun listar(): String {
 } // FIM DA FUNÇÃO LISTAR
 
 private fun editar(): Boolean {
+
     if (validar()) {
         listar()
-
         println("Digite a posição a ser editada:")
-        val posicao = readln().toInt()
-
-        println("O convidado vai? S/N")
-        val resposta = readln().uppercase().trim()
-
-        when (resposta) {
-            "S" -> listaConvidados[posicao].presenca = true
-            "N" -> listaConvidados[posicao].presenca = false
+        val posicao = readln()
+        if (expressaoRegular3.matches(posicao)) {
+            println("O convidado vai? S/N")
+            val resposta = readln().uppercase()
+            if (expressaoRegular4.matches(resposta)) {
+                when (resposta) {
+                    "S" -> listaConvidados[posicao.toInt()].presenca = true
+                    "N" -> listaConvidados[posicao.toInt()].presenca = false
+                }
+            } else {
+                println("Caracter inválido! Digite S ou N")
+            }
+        } else {
+            println("A posição não foi digitada corretamente, use somente números")
         }
     }
 
@@ -121,18 +134,24 @@ private fun editar(): Boolean {
 
 private fun excluir(): Boolean {
     if (validar()) {
-        println("Qual posição você deseja remover:")
-        val posicao = readln().toInt()
-        listaConvidados.removeAt(posicao)
-
-        /* convidado.nome = ""
-         convidado.alimentar = ""
-         convidado.presente = ""
-         convidado.presenca = false
-         println("Convidar excluido ")*/
-
         listar()
-        println("Candidato removido")
+        println("Qual posição você deseja remover:")
+        val posicao = readln()
+        if (expressaoRegular3.matches(posicao)) {
+
+            listaConvidados.removeAt(posicao.toInt())
+
+            /* convidado.nome = ""
+             convidado.alimentar = ""
+             convidado.presente = ""
+             convidado.presenca = false
+             println("Convidar excluido ")*/
+
+            listar()
+            println("Candidato removido")
+        } else {
+            println("caracter inválido! Digite somente números")
+        }
     }
     return true
 }
@@ -140,13 +159,17 @@ private fun excluir(): Boolean {
 private fun busca() {
     var i = 0 // indece da lista
     println("Digite o nome da pessoa que você busca: ")
-    val busca = readln()
+    val busca = readln().uppercase()
+    if (expressaoRegular2.matches(busca)) {
     listaConvidados.forEach { convidado ->
         //o contains busca por uma string dentro de uma outra string
         if (convidado.nome.contains(busca)) {
             println("Posição: $i, Nome: ${convidado.nome} Presente: ${convidado.presente} Restrição: ${convidado.alimentar} Presença: ${convidado.presenca}")
         }
         i++
+    }
+    }else{
+        println("ERRO! Digite apenas letras do alfabeto")
     }
 }
 

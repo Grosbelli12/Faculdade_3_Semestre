@@ -1,4 +1,4 @@
-package Faculdade_3_Semestre.Aulas.Aula03.Dominio
+package Faculdade_3_Semestre.Aulas.Aula31_03_JokempoTop.Dominio
 
 class Tesoura {
 

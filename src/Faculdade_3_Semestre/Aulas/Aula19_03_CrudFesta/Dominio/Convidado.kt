@@ -1,4 +1,4 @@
-package Faculdade_3_Semestre.Aulas.Aula02.Dominio
+package Faculdade_3_Semestre.Aulas.Aula19_03_CrudFesta.Dominio
 
  class Convidado {
         var nome: String = ""
