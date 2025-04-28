@@ -519,6 +519,8 @@ fun main(){
     println(bulbasaur["PLANTA"])
     println(bulbasaur["VENENO"])
 
+
+
     if (charmander.containsKey("PLANTA")){
         println("Ele é do tipo planta")
     }else{
@@ -537,6 +539,12 @@ fun main(){
     for((chave, valor) in mew){
         println("A chave é $chave -> O valor é $valor")
     }
+
+    for ((tipo, forca)in mewtwo){
+        println("o o pokemom usou um atque tio $tipo e dá super efetivo em $forca")
+    }
+
+
 
  /*exemplo
     val carro = mapOf(
