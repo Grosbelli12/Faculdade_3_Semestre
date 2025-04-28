@@ -516,8 +516,33 @@ fun main(){
     val mew = mapOf(
         "PSIQUICO" to listOf("LUTADOR", "VENENO")
     )
-    println(bulbasaur["PLANTA"])
-    println(bulbasaur["VENENO"])
+
+
+    //Map de Maps
+    val time_1 = mapOf(
+        1 to pikachu,
+        2 to charizard,
+        3 to alakazam,
+        4 to magmar,
+        5 to pidgey,
+        6 to caterpie
+    )
+
+    val time_2 = mapOf(
+        1 to dragonaite,
+        2 to mewtwo,
+        3 to spearow,
+        4 to blastoise,
+        5 to fearow,
+    )
+
+    println("1º Pokemon do time 1")
+    println(time_1[1]?.keys!!)//Tipo do Pokemon
+    println(time_1[1]?.values!!)//De quem ele ganha
+
+    println("1º Pokemon do time 2")
+    println(time_2[1]?.keys!!)//Tipo do Pokemon
+    println(time_2[1]?.values!!)//De quem ele ganha
 
 
 
