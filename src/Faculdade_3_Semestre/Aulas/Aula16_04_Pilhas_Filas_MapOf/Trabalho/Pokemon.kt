@@ -165,7 +165,6 @@ fun main() {
     val chave = "pokemons"
     mostrarPokemons(pokemon, chave)
 
-
     // Escolher Pokémon para o jogador 1
     val quantidade = qtdePokemonLuta.toInt()
     val time = escolherTresPokemons(pokemon,chave, quantidade)
