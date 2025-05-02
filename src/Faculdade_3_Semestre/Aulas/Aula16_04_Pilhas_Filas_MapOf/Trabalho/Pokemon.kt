@@ -176,7 +176,6 @@ fun main() {
 
 
 
-
     // ... (continuação do seu código, como a escolha do jogador 2 ou a batalha)
     /*
     //Thread.sleep(2000)
