@@ -1,13 +1,10 @@
 package Faculdade_3_Semestre.Aulas.Aula16_04_Pilhas_Filas_MapOf.Trabalho
 
-fun mostrarPokemons(pokemon: Map<String, Any>?, chave: String) {
-    val pokemonsMap = pokemon?.get(chave) as? Map<String, String>
-    if (pokemonsMap != null) {
-        println("Pokémons disponíveis:")
-        pokemonsMap.forEach { (index, nome) ->
-            println("$index: $nome")
-        }
-    } else {
-        println("Nenhum Pokémon encontrado.")
+fun mostrarPokemon(mapaPokemon: Map<Int, Map<String, Any>>) {
+    println("Pokémons disponíveis:")
+    mapaPokemon.forEach { (chave, valor) ->
+        val dadosPokemon = valor as? Map<*, *>
+        val nomePokemon = dadosPokemon?.get("NOME") as? String
+        println("$chave: $nomePokemon")
     }
 }

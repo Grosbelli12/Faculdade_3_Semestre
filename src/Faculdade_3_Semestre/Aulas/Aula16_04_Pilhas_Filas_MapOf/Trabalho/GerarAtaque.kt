@@ -1,5 +1,14 @@
 package Faculdade_3_Semestre.Aulas.Aula16_04_Pilhas_Filas_MapOf.Trabalho
 
+//Aberração
+//
+//Explicação do que acontece:
+//   Map do primeiro Poke do player ->
+//-> Chave "ATAQUES" (um map novo que criei) ->
+//-> Chave ataque escolhido (1 a 4) ->
+//-> Valor "dano" (indíce 1)
+//
+//Essa explicação é só lógica, se quer saber que cada coisa faz, melhor pedir pro Home
 fun gerarDanoAtaque(pokemon: Map<String, Any>?, chave: String, ataque: Int, valorAtq: Int): Double {
 
     val ataques = pokemon?.get(chave) as? Map<*, *>
