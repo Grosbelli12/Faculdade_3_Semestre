@@ -1,13 +1,5 @@
 package Faculdade_3_Semestre.Aulas.Aula16_04_Pilhas_Filas_MapOf.Trabalho
-//
-//Aproveita a aberração "GerarAtaque" e pega o tipo do ataque também
-//
-//Explicação do que acontece:
-//-> Chave "ATAQUES" (um map novo que criei) ->
-//-> Chave ataque escolhido (1 a 4) ->
-//-> Valor "tipo" (indíce 2)
-
-fun pegarTipoDoAtaque(pokemon: Map<String, Any>?, chave: String, ataque: Int, tipoAtq: Int): String {
+fun pegarTipoDoAtq(pokemon: Map<String, Any>?, chave: String, ataque: Int, tipoAtq: Int): String {
 
     val ataques = pokemon?.get(chave) as? Map<*, *>
 
