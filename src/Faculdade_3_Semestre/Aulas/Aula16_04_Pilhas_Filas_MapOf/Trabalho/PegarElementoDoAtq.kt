@@ -1,5 +1,5 @@
-package mes_4_abril.aula_16_04_Pilhas_Filas_Listas.trabalho
-//
+package Faculdade_3_Semestre.Aulas.Aula16_04_Pilhas_Filas_MapOf.Trabalho
+
 //Aproveita a aberração "GerarAtaque" e pega o tipo do ataque também
 //
 //Explicação do que acontece:

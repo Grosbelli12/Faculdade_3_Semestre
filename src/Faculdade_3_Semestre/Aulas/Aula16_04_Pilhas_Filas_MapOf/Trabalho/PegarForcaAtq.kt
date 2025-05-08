@@ -1,7 +1,5 @@
-package mes_4_abril.aula_16_04_Pilhas_Filas_Listas.trabalho
-
+package Faculdade_3_Semestre.Aulas.Aula16_04_Pilhas_Filas_MapOf.Trabalho
 //Aberração
-//
 //Explicação do que acontece:
 //   Map do primeiro Poke do player ->
 //-> Chave "ATAQUES" (um map novo que criei) ->

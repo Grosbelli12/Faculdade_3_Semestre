@@ -1,4 +1,9 @@
-package mes_4_abril.aula_16_04_Pilhas_Filas_Listas.trabalho
+package Faculdade_3_Semestre.Aulas.Aula16_04_Pilhas_Filas_MapOf.Trabalho
+
+import Faculdade_3_Semestre.Aulas.Aula16_04_Pilhas_Filas_MapOf.Trabalho.mapaTodosPokemon
+import Faculdade_3_Semestre.Aulas.Aula16_04_Pilhas_Filas_MapOf.Trabalho.mostrarPokemon
+import Faculdade_3_Semestre.Aulas.Aula16_04_Pilhas_Filas_MapOf.Trabalho.pegarForcaAtq
+import Faculdade_3_Semestre.Aulas.Aula16_04_Pilhas_Filas_MapOf.Trabalho.pegarTipoDoAtq
 
 val regexCadastro = Regex("[1-2]")
 

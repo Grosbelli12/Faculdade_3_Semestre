@@ -1,4 +1,4 @@
-package mes_4_abril.aula_16_04_Pilhas_Filas_Listas.trabalho
+package Faculdade_3_Semestre.Aulas.Aula16_04_Pilhas_Filas_MapOf.Trabalho
 //
 //Função que calcula o dano que o Pokémon irá dar
 //
@@ -12,7 +12,7 @@ package mes_4_abril.aula_16_04_Pilhas_Filas_Listas.trabalho
 //Ele recebe o mapa do time do player que está sendo atacado
 //Portanto, o seu valor só pode ser um map
 //Puramente estético
-//
+
 //3° parâmetro (danoDoAtaque)
 //Quantidade de dano calculada na função "gerarDanoAtaque"
 //Apenas receberá o valor Double contido na variável que armazenou
