@@ -26,8 +26,6 @@ package mes_4_abril.aula_16_04_Pilhas_Filas_Listas.trabalho
 //Nome do player que está sendo atacado
 //Estético
 
-
-
 fun calculoDano(
     vrfcFraqueza: Boolean,
     vrfcResistencia: Boolean,

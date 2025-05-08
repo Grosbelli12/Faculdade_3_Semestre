@@ -5,7 +5,6 @@ package mes_4_abril.aula_16_04_Pilhas_Filas_Listas.trabalho
 //Explicação do que acontece:
 //-> Chave "ATAQUES" (um map novo que criei) ->
 //-> Chave ataque escolhido (1 a 4) ->
-
 //-> Valor "tipo" (indíce 2)
 
 fun pegarElementoDoAtq(pokemon: Map<String, Any>?, chave: String, ataque: Int, elementoAtq: Int): String {
