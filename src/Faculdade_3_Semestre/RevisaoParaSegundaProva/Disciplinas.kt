@@ -1,14 +1,13 @@
 package Faculdade_3_Semestre.RevisaoParaSegundaProva
 
 fun main(){
-
-    println("Qual foi a nota de Pedrinho em  matemática? ")
-    val notaMat = readln().toDouble()
-
-
         val matematica = mapOf(
-            notaMat to "Pedrinho"
+            6.1 to "Pedrinho",
+            4.0 to "Paulo",
+            8.5 to "Carlos"
         )
+
+        val
 
     println(matematica)
 
