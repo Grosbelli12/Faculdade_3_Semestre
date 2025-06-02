@@ -31,6 +31,15 @@ fun main(){
             8.0 to "Carlos"
         )
 
+    val disciplinas = mapOf(
+        "Matematica" to matematica,
+        "ciencias" to ciencias,
+        "portugues" to portugues,
+        "educacao_fisica" to educacao_fisica,
+        "historia" to historia
+    )
+
+    disciplinas.forEach{ (nomeDaDisciplina, ataque)}
 
     for ((chave,valor) in matematica ){
         val aluno = matematica[chave]
