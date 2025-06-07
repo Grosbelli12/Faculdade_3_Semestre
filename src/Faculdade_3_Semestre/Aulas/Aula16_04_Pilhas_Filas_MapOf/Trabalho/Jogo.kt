@@ -475,8 +475,7 @@ fun jogo() {
 
             val pkmnInimigoTemFrqz = verSeTemFraqueza(playerDefendendo[rodada], "DESVANTAGENS", elementoAtq)
 
-            val pkmnInimigoTemResistencia =
-                verSeTemResistencia(playerDefendendo[rodada], "RESISTÊNCIAS", elementoAtq)
+            val pkmnInimigoTemResistencia = verSeTemResistencia(playerDefendendo[rodada], "RESISTÊNCIAS", elementoAtq)
 
 
             if (p1) {
