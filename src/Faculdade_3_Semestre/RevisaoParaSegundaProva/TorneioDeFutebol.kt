@@ -46,7 +46,7 @@ fun main (){
         "ESCANTEIOS COBRADOS" to 5,
 
         "DESCRIÇÃO DO GOL" to mapOf(
-            "NOME DO JOGADOR" to "",
+            "NOME DO JOGADOR" to "Alex",
             "TEMPO DO GOL" to 45.0,
             "TIPO DE GOL" to listOf("normal, falta, pênalti")
         ),
