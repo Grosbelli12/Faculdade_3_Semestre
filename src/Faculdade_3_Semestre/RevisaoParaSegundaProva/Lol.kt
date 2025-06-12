@@ -51,7 +51,6 @@ fun main() {
     var totalDeMortes = 0.0
     var totalDeAbatimentos = 0.0
 
-
     time.values.forEach { jogador ->
         val danoJogador = jogador["Dano Total"] as Double
         val danoMedio = jogador["Dano Médio"] as Double
